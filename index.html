@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="HandheldFriendly" content="true">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+    <div class="start_button">
+        <button class="startQuiz" id="startQuiz">Start Quiz</button>
+    </div>
+
+    <div class="info_box">
+        <div class="heading">
+            <span class="heading_rules">Rules of the Quiz</span>
+        </div>
+        <div id="rules_info">
+            <div class="rules">1.You will have <span class="rule_1">15 seconds</span> for each question.</div>
+            <div class="rules">2.You cant undo the answer selected.</div>
+            <div class="rules">3.You can't select answer after 15 seconds.</div>
+            <div class="rules">4. You can't xit quiz while playing.</div>
+            <div class="rules">5.You will be awarded points for correct answer.</div>
+        </div>
+        <div class="buttons_infosheet" id="buttons_infosheet">
+            <button class="Exit_Quiz" id="Exit_Quiz"> Exit Quiz</button>
+            <button class="continue" id="continue">Continue</button>
+        </div>
+    </div>
+
+
+    <!-- Quiz box -->
+    <div class="quiz_box">
+        <div class="header">
+            <div class="title">Welcome to the Quiz!</div>
+            <div class="time_line"></div>
+            <div class="timer">
+                <div class="timer_text">Time left</div>
+                <div class="timer_seconds">15</div>
+            </div>
+            <div class="time_line"></div>
+
+        </div>
+        <section>
+            <div class="question">
+                <!--<span>What is the fullform of HTML?</span>!--></div>
+            <div class="options">
+                <!--
+                <div class="option">
+                    <span>Hyper text MarkUp Language</span>
+                    <div class="icon tick"> <i class="bx bx-check"></i></div>
+                </div>
+                <div class="option">
+                    <span>Hyper Text Processor</span>
+                    <div class="icon cross"> <i class="bx bx-x"></i>
+                    </div>
+                </div>
+                <div class="option">
+                    <span>Hyper Text Multiple Language</span>
+                    <div class="icon"> </div>
+                </div>
+                <div class="option">
+                    <span>Hyper Tool MarkUp Language</span>
+                    <div class="icon"></div>
+                </div>-->
+            </div>
+
+
+        </section>
+        <!-- QuizBox Footer -->
+        <div class="footer">
+
+
+            <div class="total_quesitons">
+                <!-- <span><p> 2 </p>of<p> 5 </p> Questions</span> -->
+            </div>
+            <button class="NQ">NextQuestion</button>
+
+        </div>
+
+    </div>
+    <!-- Result box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="bx bxs-medal"></i>
+        </div>
+        <div class="complete_text">
+            You have successfully completed the Quiz.
+        </div>
+        <div class="score_text">
+        </div>
+        <div class="buttons_result_box">
+
+            <button class="replay"> Replay Quiz</button>
+            <button class="Exit_result">Exit Quiz</button>
+
+
+        </div>
+    </div>
+    <script src="questions.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
